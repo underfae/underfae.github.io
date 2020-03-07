@@ -192,24 +192,59 @@ header .menu li a:hover {
         padding: 0.8em;
     }
 
-    .wrapper .welcome .strings_divs {
-
+    /*--------------WELCOME----------------*/
+    .wrapper .welcome {
+        padding: 5% 2%;
         display: flex;
-        align-self: flex-end;
-        margin-left: -17em;
+        padding-bottom: 0;
+        flex-direction: column;
+    }
+
+    .wrapper .welcome .image {
+        display: flex;
+        height: auto;
+        margin: auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .wrapper .welcome .image img {
+        width: 30em;
+
+    }
+
+    .wrapper .welcome .strings_divs {
+        display: flex;
+        height: auto;
+        margin: auto;
+        width: auto;
+        justify-content: center;
     }
 
     .wrapper .welcome .strings_divs .string1 {
         margin: 0;
+
     }
 
     .wrapper .welcome .strings_divs .string1 h1 {
         color: #fff;
-        font-size: 2em;
+        font-size: 1.4em;
         margin: 1em 0;
         margin-bottom: 0.5em;
-        margin-left: 1em;
 
+    }
+
+    .wrapper .welcome .strings_divs .string2 {
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 0.8em;
+        width: auto;
+    }
+
+    .wrapper .welcome .strings_divs .string2 h1 {
+        text-align: center;
+        margin-bottom: 1em;
     }
 }
 
@@ -256,6 +291,9 @@ header .menu li a:hover {
     /*--------------WELCOME----------------*/
     .wrapper .welcome {
         padding: 10% 2%;
+        display: flex;
+        padding-bottom: 0;
+        flex-direction: column;
     }
 
     .wrapper .welcome .image {
@@ -263,6 +301,7 @@ header .menu li a:hover {
         height: auto;
         margin: auto;
         width: 100%;
+        justify-content: center;
     }
 
     .wrapper .welcome .image img {
@@ -271,8 +310,11 @@ header .menu li a:hover {
     }
 
     .wrapper .welcome .strings_divs {
-        position: absolute;
-        top: 10%;
+        display: flex;
+        height: auto;
+        margin: auto;
+        width: auto;
+        justify-content: center;
     }
 
     .wrapper .welcome .strings_divs .string1 {
@@ -285,7 +327,6 @@ header .menu li a:hover {
         font-size: 1.4em;
         margin: 1em 0;
         margin-bottom: 0.5em;
-        margin-left: 1em;
 
     }
 
