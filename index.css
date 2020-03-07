@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Archivo Narrow', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+body {
+    height: 100%;
+    left: 0;
+    margin: 0;
+    overflow-y: scroll;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/*--------------HEADER------------------*/
+
+header {
+    background: #fec704;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+}
+
+header .name {
+    float: left;
+    font-family: 'Lobster', cursive;
+    font-size: 1.5em;
+    margin: auto;
+    margin-left: 10em;
+    width: 30%;
+}
+
+header .menu {
+    margin-right: 15em;
+    width: 70%;
+}
+
+header .menu li {
+    float: right;
+    margin-right: 2em;
+    padding: 0.5em;
+    padding-bottom: 0;
+}
+
+header .menu li a {
+    color: black;
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+}
+
+header .menu li a:hover {
+    background: #2b2b2b;
+    color: white;
+}
+
+/*--------------WELCOME----------------*/
+
+.wrapper .welcome {
+    background: #2b2b2b;
+    display: flex;
+    height: auto;
+    padding: 2% 10%;
+    width: 100%;
+}
+
+.wrapper .welcome .image {
+    display: flex;
+    height: auto;
+    margin: auto;
+    width: 38%;
+    margin-right: 0;
+    margin-left: 5em;
+}
+
+.wrapper .welcome .image img {
+    width: 35em;
+
+}
+
+.wrapper .welcome .strings_divs {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.wrapper .welcome .strings_divs .string1 {
+    margin: auto;
+    margin-bottom: 1em;
+    margin-left: 5em;
+    width: auto;
+}
+
+.wrapper .welcome .strings_divs .string1 h1 {
+    animation: typing 3s steps(30, end), blink-caret .5s step-end infinite;
+    border-right: .15em solid #fec704;
+    color: #fff;
+    font-size: 3em;
+    letter-spacing: .15em;
+    margin: auto;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #fec704
+    }
+}
+
+.wrapper .welcome .strings_divs .string2 {
+    color: #fec704;
+    font-size: 1em;
+    margin: auto;
+    margin-left: 5em;
+    margin-top: 0;
+    width: auto;
+}
+
+/*.wrapper .welcome .strings_divs .info-box {*/
+/*    background-color: #fec704;*/
+/*    color: black;*/
+/*    font-size: 1.5em;*/
+/*    height: auto;*/
+/*    margin: auto;*/
+/*    padding: 1em;*/
+/*    transform: skewX(19deg);*/
+/*    width: 60%;*/
+
+/*}*/
+
+/*--------------MEDIAQUERY TABLET----------------*/
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    /*--------------HEADER------------------*/
+    header {
+        flex-direction: column;
+    }
+
+    header .name {
+        font-size: 1.8em;
+        margin-left: 0;
+        padding-top: 0.8em;
+        text-align: center;
+        width: 100%;
+    }
+
+    header .menu {
+        margin: 0;
+        margin-top: 1em;
+        width: 100%;
+    }
+
+    header .menu ul {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+
+    header .menu li {
+        margin-right: 0;
+        padding: 0;
+        width: 25%;
+    }
+
+    header .menu li a {
+        font-size: 1em;
+        padding: 0.8em;
+    }
+
+    .wrapper .welcome .strings_divs {
+
+        display: flex;
+        align-self: flex-end;
+        margin-left: -17em;
+    }
+
+    .wrapper .welcome .strings_divs .string1 {
+        margin: 0;
+    }
+
+    .wrapper .welcome .strings_divs .string1 h1 {
+        color: #fff;
+        font-size: 2em;
+        margin: 1em 0;
+        margin-bottom: 0.5em;
+        margin-left: 1em;
+
+    }
+}
+
+/*--------------MEDIAQUERY PHONE---------------*/
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+
+    /*--------------HEADER------------------*/
+    header {
+        flex-direction: column;
+    }
+
+    header .name {
+        font-size: 1.5em;
+        margin-left: 0;
+        padding-top: 0.8em;
+        text-align: center;
+        width: 100%;
+    }
+
+    header .menu {
+        margin: 0;
+        margin-top: 1em;
+        width: 100%;
+    }
+
+    header .menu ul {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+
+    header .menu li {
+        margin-right: 0;
+        padding: 0;
+        width: 25%;
+    }
+
+    header .menu li a {
+        font-size: 0.8em;
+        padding: 0.8em;
+    }
+
+    /*--------------WELCOME----------------*/
+    .wrapper .welcome {
+        padding: 10% 2%;
+    }
+
+    .wrapper .welcome .image {
+        display: flex;
+        height: auto;
+        margin: auto;
+        width: 100%;
+    }
+
+    .wrapper .welcome .image img {
+        width: 22em;
+
+    }
+
+    .wrapper .welcome .strings_divs {
+        position: absolute;
+        top: 10%;
+    }
+
+    .wrapper .welcome .strings_divs .string1 {
+        margin: 0;
+
+    }
+
+    .wrapper .welcome .strings_divs .string1 h1 {
+        color: #fff;
+        font-size: 1.4em;
+        margin: 1em 0;
+        margin-bottom: 0.5em;
+        margin-left: 1em;
+
+    }
+
+    .wrapper .welcome .strings_divs .string2 {
+        display: none;
+    }
+}
