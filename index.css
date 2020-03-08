@@ -12,7 +12,6 @@ body {
     height: 100%;
     left: 0;
     margin: 0;
-    overflow-y: scroll;
     padding: 0;
     position: fixed;
     top: 0;
@@ -75,6 +74,12 @@ header .menu li a:hover {
     width: 100%;
 }
 
+.wrapper {
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+}
+
 .wrapper .welcome .image {
     display: flex;
     height: auto;
@@ -86,7 +91,7 @@ header .menu li a:hover {
 
 .wrapper .welcome .image img {
     width: 35em;
-
+    height: auto;
 }
 
 .wrapper .welcome .strings_divs {
@@ -141,21 +146,90 @@ header .menu li a:hover {
     width: auto;
 }
 
-/*.wrapper .welcome .strings_divs .info-box {*/
-/*    background-color: #fec704;*/
-/*    color: black;*/
-/*    font-size: 1.5em;*/
-/*    height: auto;*/
-/*    margin: auto;*/
-/*    padding: 1em;*/
-/*    transform: skewX(19deg);*/
-/*    width: 60%;*/
+/*----------------------ABOUT ME -------------------------------*/
+.wrapper .about-me {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    background-color: white;
+}
 
-/*}*/
+.wrapper .about-me .title {
+    margin: 5em 25em;
+    margin-right: 1em;
+
+}
+
+.wrapper .about-me .title .black {
+    color: #2b2b2b;
+    font-size: 2em;
+    text-align: right;
+}
+
+.wrapper .about-me .title .orange {
+    color: orange;
+    font-size: 2em;
+    text-align: right;
+}
+
+.wrapper .about-me .info-box {
+    padding: 5em 8em;
+    font-size: 1.3em;
+    letter-spacing: 0.05em;
+
+}
+
+.wrapper .about-me .info-box .first-p {
+    margin-bottom: 1em;
+
+}
+
+.wrapper .about-me .info-box .second-p {
+    margin-bottom: 2em;
+    text-align: justify;
+}
+
+.wrapper .about-me .info-box .quote {
+    color: #2b2b2b;
+    text-align: right;
+}
+
+.wrapper .about-me .info-box .quote-author {
+    color: #fec704;
+    text-align: right;
+}
+
+.wrapper .about-me .buttons {
+    margin: 5em 20em;
+    margin-left: 1em;
+    align-self: flex-end;
+}
+
+.wrapper .about-me .buttons button {
+    color: white;
+    background-color: #fec704;
+    border-radius: 2em;
+    border: none;
+    width: 10em;
+    height: auto;
+    padding: 1em;
+    margin: auto;
+    font-size: 1em;
+    outline: none;
+
+}
+
+.wrapper .about-me .buttons button:hover {
+    padding: 1.2em;
+    cursor: pointer;
+    background-color: #c49c17;
+
+}
 
 /*--------------MEDIAQUERY TABLET----------------*/
 
-@media screen and (min-width: 600px) and (max-width: 992px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
     /*--------------HEADER------------------*/
     header {
         flex-direction: column;
@@ -246,7 +320,51 @@ header .menu li a:hover {
         text-align: center;
         margin-bottom: 1em;
     }
+
+    /*----------------------ABOUT ME -------------------------------*/
+    .wrapper .about-me .title {
+        margin: 2em 3em;
+        margin-right: 0.5em;
+
+    }
+
+    .wrapper .about-me .title .black {
+        font-size: 1.5em;
+    }
+
+    .wrapper .about-me .title .orange {
+        font-size: 1.5em;
+    }
+
+    .wrapper .about-me .info-box {
+        padding: 5em 2em;
+    }
+
+    .wrapper .about-me .buttons {
+        margin: 2em 3em;
+        margin-left: 0.5em;
+        align-self: flex-start;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*--------------MEDIAQUERY PHONE---------------*/
 
@@ -307,6 +425,7 @@ header .menu li a:hover {
     .wrapper .welcome .image img {
         width: 22em;
 
+
     }
 
     .wrapper .welcome .strings_divs {
@@ -332,5 +451,38 @@ header .menu li a:hover {
 
     .wrapper .welcome .strings_divs .string2 {
         display: none;
+    }
+
+    /*----------------------ABOUT ME -------------------------------*/
+    .wrapper .about-me .title {
+        margin: 2em 3em;
+        margin-right: 0.5em;
+
+    }
+
+    .wrapper .about-me .title .black {
+        font-size: 1em;
+    }
+
+    .wrapper .about-me .title .orange {
+        font-size: 1em;
+    }
+
+    .wrapper .about-me .info-box {
+        padding: 2em 1em;
+        font-size: 1em;
+    }
+
+    .wrapper .about-me .buttons {
+        margin: 2em 2em;
+        margin-left: 0.5em;
+        align-self: flex-start;
+    }
+
+    .wrapper .about-me .buttons button {
+        border-radius: 2.5em;
+        width: 9em;
+        padding: 1em;
+        font-size: 0.8em;
     }
 }
