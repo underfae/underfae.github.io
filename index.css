@@ -169,7 +169,7 @@ header .menu li a:hover {
 }
 
 .wrapper .about-me .title .orange {
-    color: orange;
+    color: #fec704;
     font-size: 2em;
     text-align: right;
 }
@@ -401,6 +401,71 @@ header .menu li a:hover {
     font-size: 1.5em;
 }
 
+/*---------------------STUDIES---------------*/
+.wrapper .studies {
+    background-color: #2b2b2b;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-left: 23em;
+    width: 100%;
+    padding-bottom: 20em;
+}
+
+.wrapper .studies .title {
+    margin: 3em 0;
+    width: 7em;
+
+}
+
+.wrapper .studies .title .orange {
+    color: #fec704;
+    font-size: 2em;
+    text-align: right;
+}
+
+.wrapper .studies .title .white {
+    color: white;
+    font-size: 2em;
+    text-align: right;
+}
+
+.wrapper .studies .uni {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: auto;
+    margin-left: 13em;
+}
+
+.wrapper .studies .uni .date {
+    color: #fec704;
+    font-size: 2em;
+    letter-spacing: 0.05em;
+    margin-right: 3em;
+}
+
+.wrapper .studies .uni .logopk img {
+    width: 5em;
+    height: auto;
+}
+
+.wrapper .studies .uni .info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+}
+
+.wrapper .studies .uni .spec {
+    color: #fec704;
+    font-size: 1.5em;
+}
+
+.wrapper .studies .uni .uni-name {
+    color: white;
+    font-size: 2em;
+}
+
 /*--------------MEDIAQUERY TABLET----------------*/
 
 @media screen and (min-width: 600px) and (max-width: 1500px) {
@@ -557,10 +622,51 @@ header .menu li a:hover {
     }
 
     .wrapper .skills .lang {
-        margin-bottom: 20em;
+        margin-bottom: 5em;
         width: 100%;
     }
 
+    /*---------------------STUDIES---------------*/
+    .wrapper .studies {
+        padding-left: 0;
+        padding-bottom: 20em;
+    }
+
+    .wrapper .studies .title {
+        margin: 2em 1em;
+        margin-right: 0.5em;
+        width: 6em;
+
+    }
+
+    .wrapper .studies .title .orange {
+        font-size: 1.5em;
+    }
+
+    .wrapper .studies .title .white {
+        font-size: 1.5em;
+    }
+
+    .wrapper .studies .uni {
+        margin-left: 10em;
+    }
+
+    .wrapper .studies .uni .date {
+        font-size: 1.5em;
+        margin-right: 1em;
+    }
+
+    .wrapper .studies .uni .logopk img {
+        width: 4em;
+    }
+
+    .wrapper .studies .uni .spec {
+        font-size: 1em;
+    }
+
+    .wrapper .studies .uni .uni-name {
+        font-size: 1.5em;
+    }
 }
 
 /*--------------MEDIAQUERY PHONE---------------*/
@@ -757,7 +863,7 @@ header .menu li a:hover {
         grid-template-columns: 20% 60%;
         grid-template-rows: repeat(2, 40%);
         height: auto;
-        margin-bottom: 20em;
+        margin-bottom: 5em;
         margin-top: 3em;
         width: 100%;
     }
@@ -765,4 +871,55 @@ header .menu li a:hover {
     .wrapper .skills .lang label {
         font-size: 1em;
     }
+
+    /*---------------------STUDIES---------------*/
+    .wrapper .studies {
+        padding-left: 0;
+        padding-bottom: 20em;
+    }
+
+    .wrapper .studies .title {
+        margin: 2em 1em;
+        margin-right: 0.5em;
+        width: 4em;
+        margin-bottom: 4em;
+    }
+
+    .wrapper .studies .title .orange {
+        font-size: 1em;
+    }
+
+    .wrapper .studies .title .white {
+        font-size: 1em;
+    }
+
+    .wrapper .studies .uni {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        margin-left: 2em;
+    }
+
+    .wrapper .studies .uni .date {
+        font-size: 1em;
+        margin-right: 1em;
+    }
+
+    .wrapper .studies .uni .logopk img {
+        width: 3em;
+    }
+
+    .wrapper .studies .uni .info {
+        margin-left: 2em;
+    }
+
+    .wrapper .studies .uni .spec {
+        font-size: 0.8em;
+    }
+
+    .wrapper .studies .uni .uni-name {
+        font-size: 1em;
+    }
+
 }
