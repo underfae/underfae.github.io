@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Archivo Narrow', sans-serif;
+    justify-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -75,8 +76,8 @@ header .menu li a:hover {
 }
 
 .wrapper {
-    overflow: auto;
     height: 100%;
+    overflow: auto;
     width: 100%;
 }
 
@@ -84,14 +85,14 @@ header .menu li a:hover {
     display: flex;
     height: auto;
     margin: auto;
-    width: 38%;
-    margin-right: 0;
     margin-left: 5em;
+    margin-right: 0;
+    width: 38%;
 }
 
 .wrapper .welcome .image img {
-    width: 35em;
     height: auto;
+    width: 35em;
 }
 
 .wrapper .welcome .strings_divs {
@@ -148,11 +149,11 @@ header .menu li a:hover {
 
 /*----------------------ABOUT ME -------------------------------*/
 .wrapper .about-me {
+    background-color: white;
     display: flex;
     flex-direction: row;
     height: auto;
     width: 100%;
-    background-color: white;
 }
 
 .wrapper .about-me .title {
@@ -174,9 +175,9 @@ header .menu li a:hover {
 }
 
 .wrapper .about-me .info-box {
-    padding: 5em 8em;
     font-size: 1.3em;
     letter-spacing: 0.05em;
+    padding: 5em 8em;
 
 }
 
@@ -201,35 +202,208 @@ header .menu li a:hover {
 }
 
 .wrapper .about-me .buttons {
+    align-self: flex-end;
     margin: 5em 20em;
     margin-left: 1em;
-    align-self: flex-end;
 }
 
 .wrapper .about-me .buttons button {
-    color: white;
     background-color: #fec704;
-    border-radius: 2em;
     border: none;
-    width: 10em;
-    height: auto;
-    padding: 1em;
-    margin: auto;
+    border-radius: 2em;
+    color: white;
     font-size: 1em;
+    height: auto;
+    margin: auto;
     outline: none;
+    padding: 1em;
+    width: 10em;
 
 }
 
 .wrapper .about-me .buttons button:hover {
-    padding: 1.2em;
-    cursor: pointer;
     background-color: #c49c17;
+    cursor: pointer;
+    padding: 1.2em;
 
+}
+
+/*-------------------SKILLS--------------*/
+.wrapper .skills {
+    background-color: #fec704;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-left: 25em;
+    width: 100%;
+}
+
+.wrapper .skills .title {
+    margin: 3em 0;
+    width: 6em;
+
+}
+
+.wrapper .skills .title .black {
+    color: #2b2b2b;
+    font-size: 2em;
+    text-align: right;
+}
+
+.wrapper .skills .title .white {
+    color: white;
+    font-size: 2em;
+    text-align: right;
+}
+
+.wrapper .skills .skills-grid {
+    display: grid;
+    grid-template-columns: 20% 40%;
+    grid-template-rows: repeat(4, 30%);
+    height: auto;
+    margin-bottom: 5em;
+    margin-top: 2em;
+    width: 80%;
+}
+
+/*////////ANIMATIONS//////////*/
+
+.wrapper .skills .progress-bar {
+    align-items: center;
+    background: #494949;
+    border-radius: 2em;
+    display: flex;
+    height: auto;
+    justify-content: flex-start;
+    margin-bottom: 0.2em;
+    padding: 0.2em 0.5em;
+    width: 100%;
+}
+
+.wrapper .skills .progress-bar .progress-css-html {
+    animation: load-css-html 3s normal forwards;
+    background: #fff;
+    border-radius: 2em;
+    box-shadow: 0 10px 40px -10px #fff;
+    height: 1.5em;
+    width: 0;
+}
+
+@keyframes load-css-html {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.wrapper .skills .progress-bar .progress-sql {
+    animation: loadsql 3s normal forwards;
+    background: #fff;
+    border-radius: 2em;
+    box-shadow: 0 10px 40px -10px #fff;
+    height: 1.5em;
+    width: 0;
+}
+
+@keyframes loadsql {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+.wrapper .skills .progress-bar .progress-js {
+    animation: loadjs 3s normal forwards;
+    background: #fff;
+    border-radius: 2em;
+    box-shadow: 0 10px 40px -10px #fff;
+    height: 1.5em;
+    width: 0;
+}
+
+@keyframes loadjs {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 30%;
+    }
+}
+
+/*//////////////////////*/
+
+.wrapper .skills .skills-grid label {
+    color: #2b2b2b;
+    font-size: 1.5em;
+}
+
+/*.wrapper .skills .skills-grid .CSS-HTML:hover{*/
+/*    color: #ffffff;*/
+/*    font-size: 1.7em;*/
+/*    cursor: pointer;*/
+/*    font-weight: bold;*/
+
+/*}*/
+
+.wrapper .skills img {
+    height: auto;
+    width: 4em;
+}
+
+.wrapper .skills .programs {
+    margin-top: 3em;
+}
+
+.wrapper .skills .programs label {
+    color: white;
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    margin-left: 6em;
+}
+
+.wrapper .skills .programs li {
+    display: inline;
+    margin-right: 2em;
+    padding: 0.5em;
+    padding-bottom: 0;
+}
+
+.wrapper .skills .programs ul {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.wrapper .skills .lang-label {
+    color: white;
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    margin-left: 6em;
+    margin-top: 3em;
+}
+
+.wrapper .skills .lang {
+    display: grid;
+    grid-template-columns: 20% 40%;
+    grid-template-rows: repeat(2, 60%);
+    height: auto;
+    margin-bottom: 5em;
+    margin-top: 3em;
+    width: 80%;
+
+}
+
+.wrapper .skills .lang label {
+    color: #2b2b2b;
+    font-size: 1.5em;
 }
 
 /*--------------MEDIAQUERY TABLET----------------*/
 
-@media screen and (min-width: 600px) and (max-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1500px) {
     /*--------------HEADER------------------*/
     header {
         flex-direction: column;
@@ -268,31 +442,31 @@ header .menu li a:hover {
 
     /*--------------WELCOME----------------*/
     .wrapper .welcome {
-        padding: 5% 2%;
         display: flex;
-        padding-bottom: 0;
         flex-direction: column;
+        padding: 5% 2%;
+        padding-bottom: 0;
     }
 
     .wrapper .welcome .image {
         display: flex;
         height: auto;
+        justify-content: center;
         margin: auto;
         width: 100%;
-        justify-content: center;
     }
 
     .wrapper .welcome .image img {
-        width: 30em;
-
+        height: auto;
+        max-width: 30em;
     }
 
     .wrapper .welcome .strings_divs {
         display: flex;
         height: auto;
+        justify-content: center;
         margin: auto;
         width: auto;
-        justify-content: center;
     }
 
     .wrapper .welcome .strings_divs .string1 {
@@ -309,16 +483,16 @@ header .menu li a:hover {
     }
 
     .wrapper .welcome .strings_divs .string2 {
+        font-size: 0.8em;
         justify-content: center;
         margin-left: 0;
         margin-right: 0;
-        font-size: 0.8em;
         width: auto;
     }
 
     .wrapper .welcome .strings_divs .string2 h1 {
-        text-align: center;
         margin-bottom: 1em;
+        text-align: center;
     }
 
     /*----------------------ABOUT ME -------------------------------*/
@@ -341,30 +515,53 @@ header .menu li a:hover {
     }
 
     .wrapper .about-me .buttons {
+        align-self: flex-start;
         margin: 2em 3em;
         margin-left: 0.5em;
-        align-self: flex-start;
     }
+
+    /*-------------------SKILLS--------------*/
+    .wrapper .skills {
+        padding-left: 0;
+    }
+
+    .wrapper .skills .title {
+        margin: 2em 3em;
+        width: 4em;
+    }
+
+    .wrapper .skills .title .black {
+        font-size: 1.5em;
+    }
+
+    .wrapper .skills .title .white {
+        font-size: 1.5em;
+    }
+
+    .wrapper .skills .skills-grid {
+        display: grid;
+        grid-template-columns: 20% 40%;
+        grid-template-rows: repeat(4, 30%);
+        height: auto;
+        margin-bottom: 5em;
+        margin-top: 2em;
+        width: 100%;
+    }
+
+    .wrapper .skills .programs label {
+        margin-left: 1em;
+    }
+
+    .wrapper .skills .lang-label {
+        margin-left: 1em;
+    }
+
+    .wrapper .skills .lang {
+        margin-bottom: 20em;
+        width: 100%;
+    }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*--------------MEDIAQUERY PHONE---------------*/
 
@@ -408,32 +605,31 @@ header .menu li a:hover {
 
     /*--------------WELCOME----------------*/
     .wrapper .welcome {
-        padding: 10% 2%;
         display: flex;
-        padding-bottom: 0;
         flex-direction: column;
+        padding: 10% 2%;
+        padding-bottom: 0;
     }
 
     .wrapper .welcome .image {
         display: flex;
         height: auto;
+        justify-content: center;
         margin: auto;
         width: 100%;
-        justify-content: center;
     }
 
     .wrapper .welcome .image img {
-        width: 22em;
-
-
+        height: auto;
+        max-width: 22em;
     }
 
     .wrapper .welcome .strings_divs {
         display: flex;
         height: auto;
+        justify-content: center;
         margin: auto;
         width: auto;
-        justify-content: center;
     }
 
     .wrapper .welcome .strings_divs .string1 {
@@ -454,10 +650,14 @@ header .menu li a:hover {
     }
 
     /*----------------------ABOUT ME -------------------------------*/
-    .wrapper .about-me .title {
-        margin: 2em 3em;
-        margin-right: 0.5em;
+    .wrapper .about-me {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
 
+    .wrapper .about-me .title {
+        margin: 2em 1em;
+        margin-right: 0.5em;
     }
 
     .wrapper .about-me .title .black {
@@ -469,20 +669,100 @@ header .menu li a:hover {
     }
 
     .wrapper .about-me .info-box {
-        padding: 2em 1em;
         font-size: 1em;
+        padding: 2em 1em;
     }
 
     .wrapper .about-me .buttons {
+        align-self: flex-start;
         margin: 2em 2em;
         margin-left: 0.5em;
-        align-self: flex-start;
     }
 
     .wrapper .about-me .buttons button {
         border-radius: 2.5em;
-        width: 9em;
-        padding: 1em;
         font-size: 0.8em;
+        padding: 1em;
+        width: 9em;
+    }
+
+    /*-------------------SKILLS--------------*/
+    .wrapper .skills {
+        padding-left: 0;
+    }
+
+    .wrapper .skills .title {
+        margin: 2em 1em;
+        margin-right: 0.5em;
+        width: 3em;
+    }
+
+    .wrapper .skills .title .black {
+        font-size: 1em;
+    }
+
+    .wrapper .skills .title .white {
+        font-size: 1em;
+    }
+
+    .wrapper .skills .skills-grid {
+        grid-template-columns: 20% 60%;
+        grid-template-rows: repeat(4, 20%);
+        margin-bottom: 2em;
+        width: 100%;
+    }
+
+    /*////////ANIMATIONS//////////*/
+    .wrapper .skills .progress-bar {
+        padding: 0.6em 0.3em;
+    }
+
+    .wrapper .skills .progress-bar .progress-css-html {
+        height: 1em;
+    }
+
+    .wrapper .skills .progress-bar .progress-sql {
+        height: 1em;
+    }
+
+    .wrapper .skills .progress-bar .progress-js {
+        height: 1em;
+    }
+
+    /*//////////////////////*/
+    .wrapper .skills .skills-grid label {
+        font-size: 1em;
+    }
+
+    .wrapper .skills .programs {
+        margin-top: 1em;
+    }
+
+    .wrapper .skills .programs label {
+        font-size: 1em;
+        margin-left: 1em;
+    }
+
+    .wrapper .skills img {
+        width: 2em;
+    }
+
+    .wrapper .skills .lang-label {
+        font-size: 1em;
+        margin-left: 1em;
+    }
+
+    .wrapper .skills .lang {
+        display: grid;
+        grid-template-columns: 20% 60%;
+        grid-template-rows: repeat(2, 40%);
+        height: auto;
+        margin-bottom: 20em;
+        margin-top: 3em;
+        width: 100%;
+    }
+
+    .wrapper .skills .lang label {
+        font-size: 1em;
     }
 }
