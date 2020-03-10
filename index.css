@@ -19,7 +19,7 @@ body {
     width: 100%;
 }
 
-/*--------------HEADER------------------*/
+/************************HEADER***********************/
 
 header {
     background: #fec704;
@@ -40,6 +40,7 @@ header .name {
 
 header .menu {
     margin-right: 15em;
+    overflow-x: hidden;
     width: 70%;
 }
 
@@ -65,7 +66,7 @@ header .menu li a:hover {
     color: white;
 }
 
-/*--------------WELCOME----------------*/
+/************************WELCOME***********************/
 
 .wrapper .welcome {
     background: #2b2b2b;
@@ -147,7 +148,7 @@ header .menu li a:hover {
     width: auto;
 }
 
-/*----------------------ABOUT ME -------------------------------*/
+/************************ABOUT ME***********************/
 .wrapper .about-me {
     background-color: white;
     display: flex;
@@ -228,7 +229,7 @@ header .menu li a:hover {
 
 }
 
-/*-------------------SKILLS--------------*/
+/************************SKILLS***********************/
 .wrapper .skills {
     background-color: #fec704;
     display: flex;
@@ -341,14 +342,6 @@ header .menu li a:hover {
     font-size: 1.5em;
 }
 
-/*.wrapper .skills .skills-grid .CSS-HTML:hover{*/
-/*    color: #ffffff;*/
-/*    font-size: 1.7em;*/
-/*    cursor: pointer;*/
-/*    font-weight: bold;*/
-
-/*}*/
-
 .wrapper .skills img {
     height: auto;
     width: 4em;
@@ -401,15 +394,15 @@ header .menu li a:hover {
     font-size: 1.5em;
 }
 
-/*---------------------STUDIES---------------*/
+/************************STUDIES***********************/
 .wrapper .studies {
     background-color: #2b2b2b;
     display: flex;
     flex-direction: column;
     height: auto;
+    padding-bottom: 8em;
     padding-left: 23em;
     width: 100%;
-    padding-bottom: 8em;
 }
 
 .wrapper .studies .title {
@@ -433,9 +426,9 @@ header .menu li a:hover {
 .wrapper .studies .uni {
     display: flex;
     flex-direction: row;
-    width: 70%;
     height: auto;
     margin-left: 13em;
+    width: 70%;
 }
 
 .wrapper .studies .uni .date {
@@ -446,8 +439,8 @@ header .menu li a:hover {
 }
 
 .wrapper .studies .uni .logopk img {
-    width: 5em;
     height: auto;
+    width: 5em;
 }
 
 .wrapper .studies .uni .info {
@@ -466,16 +459,16 @@ header .menu li a:hover {
     font-size: 2em;
 }
 
-/*---------------CONTACT ME -------------------------*/
+/************************CONTACT***********************/
 
 .wrapper .contact {
     background-color: white;
     display: flex;
     flex-direction: column;
     height: auto;
+    padding-bottom: 10em;
     padding-left: 23em;
     width: 100%;
-    padding-bottom: 10em;
 }
 
 .wrapper .contact .title {
@@ -503,8 +496,8 @@ header .menu li a:hover {
 .wrapper .contact .links {
     display: flex;
     flex-direction: row;
-    width: 100%;
     margin-top: 3em;
+    width: 100%;
 }
 
 .wrapper .contact label {
@@ -515,50 +508,50 @@ header .menu li a:hover {
 }
 
 .wrapper .contact .links a .fa-envelope {
-    margin-right: 1em;
     color: #d93025;
+    margin-right: 1em;
 }
 
 .wrapper .contact .links a .fa-facebook-f {
-    margin-right: 1em;
     color: #4267b2;
+    margin-right: 1em;
 }
 
 .wrapper .contact .links a .fa-linkedin-in {
-    margin-right: 1em;
     color: #0077b5;
+    margin-right: 1em;
 }
 
 .wrapper .contact .links a {
-    display: block;
-    width: 20%;
-    height: 2em;
-    font-size: 1.5em;
-    text-decoration: none;
-    color: #2b2b2b;
     border: none;
+    color: #2b2b2b;
+    display: block;
+    font-size: 1.5em;
+    height: 2em;
     letter-spacing: 0.05em;
-    text-align: center;
-    position: relative;
-    transition: all .35s;
     margin-right: 2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all .35s;
+    width: 20%;
 }
 
 .wrapper .contact .links a span {
     position: relative;
-    z-index: 2;
     vertical-align: -webkit-baseline-middle;
+    z-index: 2;
 }
 
 .wrapper .contact .links a:after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
     background: #fec704;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
     transition: all .35s;
+    width: 0;
 }
 
 .wrapper .contact .links a:hover {
@@ -569,10 +562,11 @@ header .menu li a:hover {
     width: 100%;
 }
 
-/*--------------MEDIAQUERY TABLET----------------*/
+/*---------------------------------------MEDIAQUERY TABLET---------------------------------*/
 
 @media screen and (min-width: 600px) and (max-width: 1500px) {
-    /*--------------HEADER------------------*/
+
+    /************************HEADER***********************/
     header {
         flex-direction: column;
     }
@@ -608,7 +602,7 @@ header .menu li a:hover {
         padding: 0.8em;
     }
 
-    /*--------------WELCOME----------------*/
+    /************************WELCOME***********************/
     .wrapper .welcome {
         display: flex;
         flex-direction: column;
@@ -639,7 +633,6 @@ header .menu li a:hover {
 
     .wrapper .welcome .strings_divs .string1 {
         margin: 0;
-
     }
 
     .wrapper .welcome .strings_divs .string1 h1 {
@@ -663,7 +656,7 @@ header .menu li a:hover {
         text-align: center;
     }
 
-    /*----------------------ABOUT ME -------------------------------*/
+    /************************ABOUT ME***********************/
     .wrapper .about-me .title {
         margin: 2em 3em;
         margin-right: 0.5em;
@@ -688,7 +681,7 @@ header .menu li a:hover {
         margin-left: 0.5em;
     }
 
-    /*-------------------SKILLS--------------*/
+    /************************SKILLS***********************/
     .wrapper .skills {
         padding-left: 0;
     }
@@ -729,10 +722,10 @@ header .menu li a:hover {
         width: 100%;
     }
 
-    /*---------------------STUDIES---------------*/
+    /************************STUDIES***********************/
     .wrapper .studies {
+        padding-bottom: 8em;
         padding-left: 0;
-        padding-bottom: 20em;
     }
 
     .wrapper .studies .title {
@@ -770,13 +763,43 @@ header .menu li a:hover {
     .wrapper .studies .uni .uni-name {
         font-size: 1.5em;
     }
+
+    /************************CONTACT***********************/
+    .wrapper .contact {
+        padding-bottom: 10em;
+        padding-left: 0;
+    }
+
+    .wrapper .contact .title {
+        margin: 2em 2em;
+        margin-right: 0.5em;
+        width: 6em;
+
+    }
+
+    .wrapper .contact .title .orange {
+        font-size: 1.5em;
+    }
+
+    .wrapper .contact .title .black {
+        font-size: 1.5em;
+    }
+
+    .wrapper .contact .links {
+        margin-top: 2em;
+    }
+
+    .wrapper .contact label {
+        font-size: 1.3em;
+    }
+
 }
 
-/*--------------MEDIAQUERY PHONE---------------*/
+/*---------------------------------MEDIAQUERY PHONE-------------------------------------*/
 
 @media screen and (min-width: 0px) and (max-width: 600px) {
 
-    /*--------------HEADER------------------*/
+    /************************HEADER***********************/
     header {
         flex-direction: column;
     }
@@ -812,7 +835,7 @@ header .menu li a:hover {
         padding: 0.8em;
     }
 
-    /*--------------WELCOME----------------*/
+    /************************WELCOME***********************/
     .wrapper .welcome {
         display: flex;
         flex-direction: column;
@@ -858,7 +881,7 @@ header .menu li a:hover {
         display: none;
     }
 
-    /*----------------------ABOUT ME -------------------------------*/
+    /************************ABOUT ME***********************/
     .wrapper .about-me {
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -895,7 +918,7 @@ header .menu li a:hover {
         width: 9em;
     }
 
-    /*-------------------SKILLS--------------*/
+    /************************SKILLS***********************/
     .wrapper .skills {
         padding-left: 0;
     }
@@ -975,17 +998,17 @@ header .menu li a:hover {
         font-size: 1em;
     }
 
-    /*---------------------STUDIES---------------*/
+    /************************STUDIES**********************/
     .wrapper .studies {
+        padding-bottom: 8em;
         padding-left: 0;
-        padding-bottom: 20em;
     }
 
     .wrapper .studies .title {
         margin: 2em 1em;
+        margin-bottom: 4em;
         margin-right: 0.5em;
         width: 4em;
-        margin-bottom: 4em;
     }
 
     .wrapper .studies .title .orange {
@@ -997,8 +1020,8 @@ header .menu li a:hover {
     }
 
     .wrapper .studies .uni {
-        width: 100%;
         margin-left: 2em;
+        width: 100%;
     }
 
     .wrapper .studies .uni .date {
@@ -1020,6 +1043,59 @@ header .menu li a:hover {
 
     .wrapper .studies .uni .uni-name {
         font-size: 1em;
+    }
+
+    /************************CONTACT***********************/
+    .wrapper .contact {
+        padding-bottom: 10em;
+        padding-left: 0;
+    }
+
+    .wrapper .contact .title {
+        margin: 2em 1em;
+        margin-right: 0.5em;
+        width: 4em;
+
+    }
+
+    .wrapper .contact .title .orange {
+        font-size: 1em;
+    }
+
+    .wrapper .contact .title .black {
+        font-size: 1em;
+    }
+
+    .wrapper .contact .links {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+    }
+
+    .wrapper .contact label {
+        font-size: 1em;
+        margin-left: 2em;
+    }
+
+    .wrapper .contact .links a .fa-envelope {
+        margin-right: 0.5em;
+    }
+
+    .wrapper .contact .links a .fa-facebook-f {
+        margin-right: 0.5em;
+    }
+
+    .wrapper .contact .links a .fa-linkedin-in {
+        margin-right: 0.5em;
+    }
+
+    .wrapper .contact .links a {
+        font-size: 1em;
+        height: 2em;
+        margin-bottom: 1.5em;
+        margin-right: 0;
+        width: 50%;
     }
 
 }
