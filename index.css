@@ -158,7 +158,7 @@ header .menu li a:hover {
 }
 
 .wrapper .about-me .title {
-    margin: 5em 25em;
+    margin: 5em 15em;
     margin-right: 1em;
 
 }
@@ -235,7 +235,7 @@ header .menu li a:hover {
     display: flex;
     flex-direction: column;
     height: auto;
-    padding-left: 25em;
+    padding-left: 15em;
     width: 100%;
 }
 
@@ -401,7 +401,7 @@ header .menu li a:hover {
     flex-direction: column;
     height: auto;
     padding-bottom: 8em;
-    padding-left: 23em;
+    padding-left: 13em;
     width: 100%;
 }
 
@@ -467,7 +467,7 @@ header .menu li a:hover {
     flex-direction: column;
     height: auto;
     padding-bottom: 10em;
-    padding-left: 23em;
+    padding-left: 13em;
     width: 100%;
 }
 
