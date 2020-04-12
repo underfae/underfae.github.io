@@ -260,7 +260,7 @@ header .menu li a:hover {
 .wrapper .skills .skills-grid {
     display: grid;
     grid-template-columns: 20% 40%;
-    grid-template-rows: repeat(4, 30%);
+    grid-template-rows: repeat(6, 20%);
     height: auto;
     margin-bottom: 5em;
     margin-top: 2em;
@@ -295,7 +295,7 @@ header .menu li a:hover {
         width: 0;
     }
     100% {
-        width: 100%;
+        width: 80%;
     }
 }
 
@@ -313,7 +313,7 @@ header .menu li a:hover {
         width: 0;
     }
     100% {
-        width: 80%;
+        width: 70%;
     }
 }
 
@@ -331,7 +331,61 @@ header .menu li a:hover {
         width: 0;
     }
     100% {
-        width: 30%;
+        width: 20%;
+    }
+}
+
+.wrapper .skills .progress-bar .progress-plsql {
+    animation: loadplsql 3s normal forwards;
+    background: #fff;
+    border-radius: 2em;
+    box-shadow: 0 10px 40px -10px #fff;
+    height: 1.5em;
+    width: 0;
+}
+
+@keyframes loadplsql {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 45%;
+    }
+}
+
+.wrapper .skills .progress-bar .progress-php {
+    animation: loadphp 3s normal forwards;
+    background: #fff;
+    border-radius: 2em;
+    box-shadow: 0 10px 40px -10px #fff;
+    height: 1.5em;
+    width: 0;
+}
+
+@keyframes loadphp {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+.wrapper .skills .progress-bar .progress-polish {
+    animation: loadpolish 3s normal forwards;
+    background: #fff;
+    border-radius: 2em;
+    box-shadow: 0 10px 40px -10px #fff;
+    height: 1.5em;
+    width: 0;
+}
+
+@keyframes loadpolish {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
     }
 }
 
@@ -702,7 +756,7 @@ header .menu li a:hover {
     .wrapper .skills .skills-grid {
         display: grid;
         grid-template-columns: 20% 40%;
-        grid-template-rows: repeat(4, 30%);
+        grid-template-rows: repeat(6, 25%);
         height: auto;
         margin-bottom: 5em;
         margin-top: 2em;
@@ -938,8 +992,8 @@ header .menu li a:hover {
     }
 
     .wrapper .skills .skills-grid {
-        grid-template-columns: 20% 60%;
-        grid-template-rows: repeat(4, 20%);
+        grid-template-columns: 25% 65%;
+        grid-template-rows: repeat(6, 15%);
         margin-bottom: 2em;
         width: 100%;
     }
@@ -958,6 +1012,18 @@ header .menu li a:hover {
     }
 
     .wrapper .skills .progress-bar .progress-js {
+        height: 1em;
+    }
+
+    .wrapper .skills .progress-bar .progress-plsql {
+        height: 1em;
+    }
+
+    .wrapper .skills .progress-bar .progress-php {
+        height: 1em;
+    }
+
+    .wrapper .skills .progress-bar .progress-polish {
         height: 1em;
     }
 
@@ -1021,20 +1087,23 @@ header .menu li a:hover {
 
     .wrapper .studies .uni {
         margin-left: 2em;
-        width: 100%;
+        width: 90%;
     }
 
     .wrapper .studies .uni .date {
         font-size: 1em;
         margin-right: 1em;
+        padding-left: 0em;
+        width: 5em;
     }
 
     .wrapper .studies .uni .logopk img {
-        width: 3em;
+        width: 2em;
     }
 
     .wrapper .studies .uni .info {
         margin-left: 2em;
+        width: 7em;
     }
 
     .wrapper .studies .uni .spec {
